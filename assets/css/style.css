@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
+
+body {
+  background-color: #ffc800;
+  height: 100vh; }
+
+.container {
+  display: flex;
+  padding: 0 150px;
+  gap: 20px;
+  height: 100%;
+  position: relative; }
+  .container > div {
+    flex-grow: 1;
+    background-color: cornsilk;
+    color: #cda103;
+    text-align: center;
+    height: 100%;
+    font-size: 24px;
+    width: 300px; }
+    .container > div .todo-input {
+      position: absolute;
+      bottom: 20px; }
+      .container > div .todo-input input {
+        border: 2px solid gold;
+        outline: none;
+        text-align: center;
+        width: 350px;
+        height: 40px;
+        position: relative;
+        left: 10px; }
+  .container .task-container {
+    padding: 20px 14px; }
+    .container .task-container .task {
+      box-shadow: 0 0 14px #b5b3b3;
+      color: rgba(45, 41, 41, 0.632);
+      font-size: 18px;
+      margin-top: 12px;
+      cursor: move; }
+  .container .tsk {
+    margin-top: 12px;
+    box-shadow: 0 0 14px #b5b3b3;
+    color: rgba(45, 41, 41, 0.632);
+    cursor: move;
+    font-size: 18px; }
+  .container .drag-item {
+    border: 1px dashed #9b2335; }
+  .container .task-todo {
+    background-color: #ffa; }
+  .container .task-doing {
+    background-color: #ffb7b7; }
+  .container .task-done {
+    background-color: #aaff; }
+
+.container > div > .task-container {
+  flex: 1; }

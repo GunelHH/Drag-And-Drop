@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h2>To-do</h2>
+        <div id="to-do" class="task-container">
+          <div class="task task-todo" draggable="true"><span>A</span></div>
+          <div class="task task-todo" draggable="true"><span>B</span></div>
+          <div class="task task-todo" draggable="true"><span>C</span></div>
+          <div class="task task-todo" draggable="true"><span>D</span></div>
+          <div class="task task-todo" draggable="true"><span>E</span></div>
+        </div>
+        <div id="todo" class="todo-input">
+          <input type="text" placeholder="Your Task..." />
+        </div>
+      </div>
+      <div>
+        <h2>Doing</h2>
+        <div id="doing" class="task-container">
+          <div class="task task-doing" draggable="true"><span>F</span></div>
+        </div>
+      </div>
+      <div>
+        <h2>Done</h2>
+        <div id="done" class="task-container">
+          <div class="task task-done" draggable="true"><span>G</span></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="assets/js/script.js"></script>
+</html>
